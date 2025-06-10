@@ -1,6 +1,6 @@
-const Informacion = () => {
+const Informacion = ({comision,anio}) => {
   return (
-    <div>
+    <section>
       <h2>Primer proyecto con react</h2>
       <p>
         React es una biblioteca de JavaScript desarrollada por Facebook para
@@ -14,7 +14,12 @@ const Informacion = () => {
         reactivas de forma modular, lo que facilita el desarrollo y el
         mantenimiento de aplicaciones a gran escala.
       </p>
-    </div>
+      <article className="bg-primary-subtle p-3 rounded-2">
+        <p>
+          Practica de contador de la <strong>comision {comision} {anio} </strong>
+        </p>
+      </article>
+    </section>
   );
 };
 
